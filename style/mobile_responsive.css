@@ -1,0 +1,152 @@
+ /* Style for Screen under 600px */
+/* Button and stuff to Hide */
+
+body{
+    background: #1D2430;
+    width: 100%;
+    height: 100vh;
+}
+/* menu and buttons */
+#menu{
+        width:100%;
+        position: relative;
+        top:0;
+        border-bottom:solid 2px #12262E;
+        box-shadow: 0px 0px 8px gray;
+        background:#23344A;
+        padding:3px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,0.5fr);
+}
+
+
+#titel{
+    font-size: 2.75rem;
+    color:white;
+    text-align: center;
+    grid-column: 1 / 4;
+    justify-self: stretch;
+}
+
+#menu #counter{
+    width:100px;
+    /* height: 30px; */
+    border:solid 1px white;
+    margin:3px auto;
+    grid-row: 2;
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#restart, #break, .signup{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    border:solid 0.5px black;
+    grid-row: 3;
+    margin:auto;
+    color:white;
+    background: #12262E;
+    text-align: center;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+
+.board{
+    position: relative;
+    background:#12262E;
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height:710px;
+    margin-top:5px;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,1fr);
+}
+
+.formular{
+    position: absolute;
+    width:100%;
+    background:black;
+    z-index:550;
+    top:80px; 
+    border:solid 1px gray;
+    box-shadow:0 0 2px gray;
+}
+.formButton{
+    color:white;
+    font-size:1.5rem;
+    position: relative;
+    right:-90%;
+    top: -585px;
+}
+form{
+    width:90%;
+    color:white;
+    font-size:1.5rem;
+    text-align: center;
+    margin:auto;
+    padding:5px;
+}
+form > fieldset{
+    position: relative;
+    margin-left:5%;
+    margin-right:5%;
+    width:90%;
+    display:grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+    border:none;
+    
+}
+label,input{
+    font-size: 1.25rem;
+}
+
+.confirmButton{
+    width:70px;
+    height: 70px;
+    border-radius: 50%;
+    border:solid 0.5px black;
+    background: rgb(70, 146, 177);
+    color:white;
+    font-size: 1rem;
+}
+span{
+    font-size:0.85rem;
+    color:gray;
+}
+/* Menu to choose amount */
+
+.cardsamount{
+    position:absolute;
+    left:35%;
+    width:100px;
+    background:#12262E;
+    list-style:none;
+    display:flex;
+    flex-wrap: wrap;
+    padding:10px;
+    border-radius: 20%;
+    box-shadow:0 0 3px white;
+    
+}
+li{
+    color:whitesmoke;
+    margin:6px;
+}
+#signup, #background,.backgroundChange{
+    display: none;
+}
+.hidden{
+    display:none;
+}
+.card{
+    width: 50px;
+    height: 50px;
+}

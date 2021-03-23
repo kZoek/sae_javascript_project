@@ -1,0 +1,140 @@
+
+/* Form style */
+
+.formular{
+    width:880px;
+    background:#1D2430;
+    position: absolute;
+    left:10%;
+    top:10%;
+    padding:50px;
+    z-index: 1858964987604; 
+    border:solid 1px gray;
+    box-shadow: 0 0 7px white;
+}
+.formular > form{
+    /* width:60vw; */
+   
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:1.15rem;
+    color:whitesmoke;
+    padding:10px;
+    margin:auto;
+}
+form > p{
+    font-size: 3rem;
+}
+fieldset{
+    margin-bottom: 15px;
+    border:none;
+    display: flex;
+}
+.gender{
+    align-self:start;
+    padding-left:18%;
+}
+.gender > input{
+    margin-right:15px;
+}
+.firstName > input, .lastName > input, .email > input, .phone > input{
+    width:30rem;
+    border:solid 2px gray;
+}
+form > input, form > label{
+    margin: 2px 5px;
+}
+form > .confirmButton{
+    position: relative;
+    width:40%;
+    height:10%;
+    border-radius: 50%;
+    border:none;
+    margin:15px auto;
+    background-color:rgb(55, 59, 65);
+    font-size:2.75rem;
+    text-transform: uppercase;
+    color:#D2E2DE;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px black;
+}
+form > .confirmButton:hover{
+    background:#12262E;
+}
+.span{
+    color:red;
+}
+.fas{
+    color:white;
+    font-size: 2rem;
+    width:50px;
+    height: 50px;
+    position: absolute;
+    right:10px;
+    top:30px;
+}
+.fas:hover{
+    color:rgb(55, 59, 65);
+}
+
+
+/* Background Change Options */
+
+
+.backgroundChange{
+    position: relative;
+    width:80%;
+    border:solid 1px white;
+    margin: 100px auto;
+    background:black;
+}
+
+.preview{
+    width:800px;
+    height:500px;
+    border:solid 1px white;
+    margin:5px auto;
+}
+.preview > img{
+    width:100%;
+    height:100%;
+}
+.selection{
+    position: relative;
+    width:100%;
+    border:solid 1px white;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+/* select button */
+.choosen{
+    width:250px;
+    height:40px;
+    background:rgb(83, 82, 92);
+    border:solid 2px #12262E;
+    margin:10px 40%;
+    cursor: pointer;
+    color:#D2E2DE;
+}
+.choosen:hover{
+ background:#12262E;
+}
+.selection > img{
+        width: 100%;
+        height: 200px;
+        border:solid 1px white;
+
+}
+.backgroundExit{
+    right:0;
+    top:1%;
+}
+.fa-arrow-left{
+    left:8%;
+    top:30%;
+}
+.fa-arrow-right{
+    right:8%;
+    top:30%;
+}

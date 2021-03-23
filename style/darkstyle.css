@@ -1,0 +1,323 @@
+/* === Small CSS Reset === */
+*{
+    margin: 0;
+    padding: 0;
+}
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+/* Style above 900px */
+body{
+    background: #1D2430;
+    width: 100%;
+    height: 100vh;
+}
+#menu{
+    background:#23344A;
+    width:20vw;
+    height: 99vh; 
+    position:absolute;
+    right:1vh;
+    top:0.5vh;
+    border:solid 5px #12262E;
+    box-shadow: 0px 0px 8px gray;
+    padding:5px;
+}
+
+ #titel{
+    position: relative;
+    left:10px;
+    width:90%;
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: solid 1.5px #D8E1E9;
+    margin-bottom:5px;
+    color:#D8E1E9;
+}
+ #counter{
+    background:rgb(83, 82, 92);
+    border:solid 2px black;
+    width:80%;
+    height:5%;
+    margin:15px auto; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#restart, #break, #background{
+    position: relative;
+    width:80%;
+    height:10%;
+    border-radius: 50%;
+    border:none;
+    margin:45px 10%;
+    background-color:rgb(55, 59, 65);
+    font-size:2.75rem;
+    text-transform: uppercase;
+    color:#D2E2DE;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px black;
+}
+#background{
+    width:30%;
+    font-size:0.75rem;
+    text-transform: none;
+    left:4.5vw;
+}
+#signup{
+    background:rgb(83, 82, 92);
+    border:solid 2px black;
+    width:80%;
+    height:5%;
+    margin:10px 25px;
+    cursor: pointer;
+    color:#D2E2DE;
+}
+#break:hover, #background:hover, #signup:hover, #restart:hover{
+background:#12262E;
+}
+
+.cardsamount{
+    position: relative;
+    top:-400px;
+    left:10%;
+    list-style: none;
+    background:rgb(55, 59, 65);
+    width:160px;
+    height:160px;
+    border-radius: 50%;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+li{
+    align-self: center;
+   text-align: center;
+   font-size: 1.15rem;
+   padding-bottom:10px;
+   color:white;
+   cursor: pointer;
+}
+.first,.second{
+    align-self:end;
+    border-bottom:solid 1px black;
+}
+.second,.fourt{
+    border-left:solid 1px black;
+  
+}
+.third,.fourt{
+    align-self:start;
+    border-top:solid 1px black;
+}
+.first,.third{
+    border-right:solid 1px black;
+}
+li:hover{
+    color:black;
+}
+
+/* game board */
+.board{
+    background-size: cover;
+    background-position: center;
+    width: 75vw;
+    height: 99vh;
+    border:solid 1px white;
+    margin:5px 15px;
+    position: relative;
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(6,1fr);
+}
+
+/* Form style */
+
+.formular{
+    width:880px;
+    background:#1D2430;
+    position: absolute;
+    left:10%;
+    top:10%;
+    padding:50px;
+    z-index: 1858964987604; 
+    border:solid 1px gray;
+    box-shadow: 0 0 7px white;
+}
+.formular > form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:1.15rem;
+    color:whitesmoke;
+    padding:10px;
+    margin:auto;
+}
+form > p{
+    font-size: 3rem;
+}
+fieldset{
+    margin-bottom: 15px;
+    border:none;
+    display: flex;
+}
+.gender{
+    align-self:start;
+    padding-left:18%;
+}
+.gender > input{
+    margin-right:15px;
+}
+.firstName > input, .lastName > input, .email > input, .phone > input{
+    width:30rem;
+    border:solid 2px gray;
+}
+form > input, form > label{
+    margin: 2px 5px;
+}
+form > .confirmButton{
+    position: relative;
+    width:40%;
+    height:10%;
+    border-radius: 50%;
+    border:none;
+    margin:15px auto;
+    background-color:rgb(55, 59, 65);
+    font-size:2.75rem;
+    text-transform: uppercase;
+    color:#D2E2DE;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px black;
+}
+form > .confirmButton:hover{
+    background:#12262E;
+}
+.span{
+    color:red;
+}
+.fas{
+    color:white;
+    font-size: 2rem;
+    width:50px;
+    height: 50px;
+    position: absolute;
+    right:10px;
+    top:30px;
+}
+.fas:hover{
+    color:rgb(55, 59, 65);
+}
+
+
+/* Background Change Options */
+
+
+.backgroundChange{
+    position: absolute;
+    width:80%;
+    border:solid 1px white;
+    margin: 20px 150px;
+    background:black;
+    z-index:500;
+    display:grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: 1fr,2fr,1fr,1fr;
+}
+
+.preview{
+    width:800px;
+    height:500px;
+    border:solid 1px white;
+    margin:5px auto;
+    grid-row: 1/1;
+    grid-column: 2/10;
+}
+.preview > img{
+    width:100%;
+    height:100%;
+}
+@media screen and (max-width: 1300px){
+    .preview{
+        width:600px;
+    }
+}
+.selection{
+    position: relative;
+    width:100%;
+    border:solid 1px white;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-row:3;
+    grid-column: 1/11;
+}
+/* select button */
+.choosen{
+    width:250px;
+    height:40px;
+    background:rgb(83, 82, 92);
+    border:solid 2px #12262E;
+    margin:10px 40%;
+    cursor: pointer;
+    color:#D2E2DE;
+    grid-row:2/3;
+    grid-column: 4/6;
+}
+.choosen:hover{
+ background:#12262E;
+}
+.selection > img{
+        width: 100%;
+        height: 200px;
+        border:solid 1px white;
+
+}
+.backgroundExit{
+    right:0;
+    top:1%;
+    grid-column: 10;
+    grid-row:1;
+}
+.fa-arrow-left{
+    left:8%;
+    top:30%;
+    grid-column:1;
+    grid-row:1;
+    
+}
+.fa-arrow-right{
+    right:25%;
+    top:30%;
+    grid-column: 10;
+    grid-row:1;
+}
+.activ{
+    opacity:0.5;
+}
+
+.hidden{
+    display:none;
+}
+.signup{
+    display:none;
+}
+
+
+
+/* Media Queries if the Desktop is smaller but not Tablet width */
+@media screen and (min-width:901px) and (max-width:1400px){
+    #restart,#break,#signup{
+        letter-spacing: 1px;
+        font-size:1rem;
+    }
+    
+    #background{
+        width:40%;
+        font-size:0.75rem;
+    }
+    .card{
+        height: 100px;
+    }
+    .board{
+        grid-template-columns: repeat(5,1fr);
+    }
+}

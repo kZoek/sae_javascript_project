@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/cards_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" media="(min-width: 900px)" href="style/darkstyle.css">
+    <link rel="stylesheet" media="(min-width: 600px) and (max-width:899px)" href="style/tablet_responsive.css">
+    <link rel="stylesheet" media="(max-width: 599px)" href="style/mobile_responsive.css">
+    <link rel="stylesheet" href="style/animation.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="bilder/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="bilder/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="bilder/favicon/apple-icon-120x120.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="bilder/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="bilder/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="bilder/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Memory Card Game Online</title>
+</head>
+
+<body>
+
+    <!-- Menu on the right side -->
+    <section id="menu">
+        <!-- Titel and counter  -->
+        <div id="titel">Memory Card Game</div>
+        <div id="counter">
+            <span>Flips</span>
+            <span class="counterFlips">0</span>
+            <span>Time</span>
+            <span class="counterTime">0</span>
+        </div>
+        <!-- Buttons to pause or restart the game -->
+        <button id="restart"> restart</button>
+        <button id="break">start</button>
+        <!-- Settings to change background  -->
+        <button id="background">Change your Background Image</button>
+        <!-- sign up  -->
+        <button id="signup">Sign up, to save your best Time!</button>
+        <button class="signup">Sign up</button>
+
+        <ul class="cardsamount hidden">
+            <li class="first" value="12">12 <br> Cards</li>
+            <li class="second" value="18">18 <br>Cards</li>
+            <li class="third" value="24">24 <br>Cards</li>
+            <li class="fourt" value="30">30 <br>Cards</li>
+        </ul>
+
+
+    </section>
+
+    <!-- sign up form -->
+    <section class="formular hidden">
+        <form action="">
+            <p>Please fill out the Form to sign up.</p>
+            <!-- radio  buttons  -->
+            <fieldset class="gender">
+                <label for="male">Male</label>
+                <input type="radio" name="answered" id="male" checked>
+                <label for="Female">Female</label>
+                <input type="radio" name="answered" id="female">
+                <label for="Other">Other</label>
+                <input type="radio" name="answered" id="other">
+            </fieldset>
+
+            <!--first name -->
+            <fieldset class="firstName">
+                <label for="firstName">First Name</label>
+                <input id="firstName" type="text">
+            </fieldset>
+
+            <!-- last name -->
+            <fieldset class="lastName">
+                <label for="lastName">Last Name</label>
+                <input id="lastName" type="text">
+            </fieldset>
+
+            <!-- email -->
+            <fieldset class="email">
+                <label for="email">E-mail Address</label>
+                <input id="email" type="email">
+            </fieldset>
+            <!-- phone number -->
+            <fieldset class="phone">
+                <label for="phone">Phone number</label>
+                <input id="phone" type="tel" placeholder="+41 79 000 00 00">
+            </fieldset>
+            <button class="confirmButton">send</button>
+        </form>
+        <!-- exit button -->
+        <i class="fas fa-times formButton"></i>
+    </section>
+
+    <!-- Background Change -->
+    <section class="backgroundChange hidden">
+        <!-- preview of the background -->
+        <div class="preview">
+            <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-1.2.1&w=1000&q=80"
+                alt="kitten">
+
+        </div>
+        <button class="choosen">use as background image</button>
+        <!-- exit and navigate buttons-->
+        <i class="fas fa-times backgroundExit"></i>
+        <i class="fas fa-arrow-left"></i>
+        <i class="fas fa-arrow-right"></i>
+        <!-- selection of the pictures -->
+        <div class="selection">
+            <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-1.2.1&w=1000&q=80"
+                alt="background1">
+            <img src="https://www.freevector.com/uploads/vector/preview/7134/FreeVector-Rainbow-Vector-Background-Colors.jpg"
+                alt="background2">
+            <img src="https://bgfons.com/uploads/rainbow/rainbow_texture679.jpg" alt="background3">
+            <img src="https://media.cmsmax.com/pyg2bhwsdu01ky1odnkcg/rocky-wall.jpg" alt="background4">
+            <img src="https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg"
+                alt="background5">
+        </div>
+
+    </section>
+    <!--  Card Board  -->
+    <section class="board" id="board">
+
+    </section>
+<!-- Vortex animation -->
+    <div id="vortex"></div>
+
+
+ 
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/validate.js"></script>
+    <script src="js/code.js"></script>
+    <script src="js/gamelogic.js"></script>
+</body>
+
+</html>

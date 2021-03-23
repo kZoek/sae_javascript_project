@@ -1,0 +1,12 @@
+
+#restart,#break,#background,#signup,.signup,li,.counterFlips,.counterTime{
+    font-family: 'Cormorant Garamond', serif;
+}
+
+#titel,span{
+font-family: 'Lobster', cursive;
+}
+
+img, i{
+    cursor: pointer;
+}

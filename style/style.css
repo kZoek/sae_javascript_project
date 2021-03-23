@@ -1,0 +1,83 @@
+/* === Small CSS Reset === */
+*{
+    margin: 0;
+    padding: 0;
+}
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    background: #B5FFCF;
+    width: 100%;
+    height: 100vh;
+}
+#menu{
+    background:#C9DAFF;
+    width:20vw;
+    height: 99vh;
+    position:absolute;
+    right:1vh;
+    top:0.5vh;
+    border:solid 5px #EB823C;
+    box-shadow: 0px 0px 8px black;
+    padding:5px;
+}
+
+.formular > form{
+    border:solid 1px white;
+    display:grid;
+    grid-template-columns: repeat(3fr);
+    grid-template-rows: repeat(6fr);
+}
+.hidden{
+    display:none;
+}
+#menu > #titel{
+    position: relative;
+    left:10px;
+    width:90%;
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: solid 1.5px #EB823C;
+    margin-bottom:5px;
+}
+#menu > #counter{
+    background:#6153F0;
+    border:solid 2px black;
+    width:80%;
+    height:5%;
+    margin:15px auto;
+    
+}
+
+#menu > #restart, #break, #background, #darkLight{
+    position: relative;
+    width:80%;
+    height:10%;
+    border-radius: 50%;
+    border:none;
+    margin:15px 2rem;
+    background-color:rgb(69, 175, 236);
+    font-size:2.75rem;
+    text-transform: uppercase;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    box-shadow: 2px 2px 4px black;
+}
+#background, #darkLight{
+    width:30%;
+    font-size:0.75rem;
+    text-transform: none;
+}
+#signup{
+    background:#6153F0;
+    border:solid 2px black;
+    width:80%;
+    height:5%;
+    margin:10px 25px;
+    cursor: pointer;
+}
+#break:hover, #background:hover, #darkLight:hover, #signup:hover, #restart:hover{
+background:#E5FDD4;
+}

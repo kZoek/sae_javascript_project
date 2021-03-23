@@ -1,0 +1,52 @@
+.card{
+    width:100px;
+    height:140px;
+    margin:15px;
+    transform-style: preserve-3d;
+    transition: 0.5s ease;
+    border-radius: 5px;
+    border:solid 3px orange;
+    background:orange;
+    justify-self: center;
+}
+.card.flip{
+    transform:rotateY(180deg);
+}
+
+
+.front{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background:black;
+    border-radius: 5px;
+    
+   
+    
+}
+.front > img{
+    width: 100%;
+    height: 100%;
+}
+.back{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform:rotateY(180deg);
+    border-radius: 5px;
+}
+.back > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+/* .board{
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    margin:150px auto;
+} */
+
